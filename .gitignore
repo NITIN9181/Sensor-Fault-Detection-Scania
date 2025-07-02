@@ -1,5 +1,52 @@
-venv/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-logs/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Environment folders
+venv/
+env/
+
+# VS Code settings
+.vscode/
+
+# Jupyter Notebook checkpoints (if any)
+.ipynb_checkpoints/
+
+# OS / system files
+.DS_Store
+Thumbs.db
+
+# Data artifacts
 artifacts/
+saved_models/
+*.pkl
+*.joblib
+
+# Python virtualenv files
+*.egg-info/
+.eggs/
+*.env
+*.venv
+
+# Flask instance folder
+instance/
+*.db
+*.sqlite3
+
+# Test / debug files
+*.bak
+*.swp
+
+# CSV/Excel files (optional, if you don’t want to push test/train data)
+*.csv
+*.xlsx
+
+# Pytest / coverage / cache
+.cache/
+.pytest_cache/
+coverage.*
+htmlcov/
