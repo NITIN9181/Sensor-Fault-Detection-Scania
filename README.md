@@ -90,44 +90,54 @@ If a truck is **predicted to fail**, it will be sent for inspection **before** a
 
 ### 6.0 🧱 Product Structure
 
+Thanks for pointing that out! Let's revisit **Section 6.0 – Product Structure** of your README to **accurately reflect your GitHub repo layout**, as per the screenshots and [your repo link](https://github.com/NITIN9181/Sensor-Fault-Detection-Scania).
+
+---
+
+### ✅ **6.0 Product Structure (Updated)**
+
+```bash
 Sensor-Fault-Detection-Scania/
-│
-├── .gitignore                      # Files and folders to ignore in git
-├── config.yaml                     # Placeholder for configuration parameters
-├── README.md                       # 📘 Project documentation
-├── requirements.txt                # ✅ Python dependencies
-├── setup.py                        # Installable Python package (currently minimal)
-│
-├── artifacts/                      # Saved model and preprocessor files
-│   ├── model.pkl
-│   └── preprocessor.pkl
-│
-├── flask_app/                      # 💻 Flask application for inference
-│   ├── app.py                      # Flask API
-│   ├── utils.py                    # Model loading and prediction logic
-│   └── templates/
-│       └── index.html              # Web UI for file upload and prediction
-│
-├── notebook/                       # 📓 Jupyter notebooks
-│   └── Scania_APS_failure_prediction.ipynb
-│
-├── static/                         # Optional: Static assets like icons/images
-│
-├── src/                            # 📦 Core project code
-│   ├── components/                 # ML pipeline components
+├── artifacts/                  # Stores model.pkl, preprocessor.pkl after training
+├── flask_app/
+│   ├── static/                 # CSS, images, etc.
+│   ├── templates/              # HTML templates (index.html)
+│   ├── app.py                  # Main Flask application
+│   └── utils.py                # Utility functions for prediction
+├── notebook/                   
+│   └── Scania_APS_failure_prediction.ipynb  # Exploratory Data Analysis
+├── pipeline/
+│   ├── __init__.py
+│   └── predict_pipeline.py     # Class-based prediction logic
+├── src/
+│   ├── components/
 │   │   ├── data_ingestion.py
 │   │   ├── data_transformation.py
 │   │   └── model_trainer.py
-│   │
-│   ├── entity/                     # Configuration dataclasses
-│   │   └── config_entity.py
-│   │
-│   ├── pipeline/                   # Pipeline scripts
-│   │   └── train_pipeline.py
-│   │
-│   ├── predict_pipeline.py         # 🔮 Prediction logic for production
-│   ├── logger.py                   # Custom logging
-│   └── exception.py                # Custom exception handling
+│   ├── exception.py
+│   ├── logger.py
+│   └── utils.py
+├── .gitignore
+├── app.py                      # (optional) wrapper if used outside flask_app
+├── config.yaml
+├── main.py                     # Pipeline training entry point
+├── README.md
+├── requirements.txt
+└── setup.py
+```
+
+### 💡 Notes:
+
+* `flask_app/app.py` is the web app entry point.
+* `pipeline/predict_pipeline.py` handles prediction from DataFrame.
+* `src/components` has modularized code for ingestion, transformation, training.
+* `artifacts` is generated during training.
+* `notebook/` holds the Jupyter Notebook for EDA and insights.
+
+---
+
+Let me know if you want to visually represent this with icons or add links to specific files in the repo!
+
 
 
 ### 7.0 🧠 Solution Strategy
