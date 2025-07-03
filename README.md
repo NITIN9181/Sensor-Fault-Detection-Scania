@@ -91,10 +91,6 @@ If a truck is **predicted to fail**, it will be sent for inspection **before** a
 ### 6.0 🧱 Product Structure
 
 
----
-
-### ✅ **6.0 Product Structure (Updated)**
-
 ```bash
 Sensor-Fault-Detection-Scania/
 ├── artifacts/                  # Stores model.pkl, preprocessor.pkl after training
