@@ -90,7 +90,6 @@ If a truck is **predicted to fail**, it will be sent for inspection **before** a
 
 ### 6.0 🧱 Product Structure
 
-Thanks for pointing that out! Let's revisit **Section 6.0 – Product Structure** of your README to **accurately reflect your GitHub repo layout**, as per the screenshots and [your repo link](https://github.com/NITIN9181/Sensor-Fault-Detection-Scania).
 
 ---
 
@@ -135,9 +134,6 @@ Sensor-Fault-Detection-Scania/
 * `notebook/` holds the Jupyter Notebook for EDA and insights.
 
 ---
-
-Let me know if you want to visually represent this with icons or add links to specific files in the repo!
-
 
 
 ### 7.0 🧠 Solution Strategy
